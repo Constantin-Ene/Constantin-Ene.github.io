@@ -1,0 +1,48 @@
+* {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+table {
+  border: 2px solid #800080;
+  display: inline;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+tr:nth-child(odd) {
+  background-color: #ff33cc;
+  
+}
+tr:nth-child(even) {
+  background-color: #e495e4;
+
+}
+
+thead>tr , tfoot>tr
+{
+  font-family: rock salt , cursive ;
+  color: white;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  background-image:url("./assets/leopardskin.jpg")
+}
+
+tbody {
+  font-family:  Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  background-image: url(./assets/noise.png);
+}
+
+caption {
+  caption-side: bottom;
+  text-align: right;
+  padding: 2%;
+  
+}
