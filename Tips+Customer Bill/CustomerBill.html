@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <section>
+            <h1>Customer Bill</h1>
+            <script>
+                document.write('<p>Chips £1</p>');
+                const chipsPrice = 1;
+        
+                document.write('<p>Burger £8</p>');
+                const burgerPrice = 8;
+        
+                document.write('<p>Drink £1</p>');
+                const drinkPrice = 1;
+        
+                document.write('<p>VAT 20%</p>');
+                const VAT = 5;
+        
+                document.write('<p>Tip 10%</p>');
+                const Tip = 10;
+        
+                const customerMenuPrice = chipsPrice + burgerPrice + drinkPrice;
+                document.write(customerMenuPrice)
+        
+                const findVAT = customerMenuPrice / VAT;
+        
+                const withVAT = customerMenuPrice + findVAT;
+                document.write(withVAT)
+        
+                const findTip = withVAT / Tip;
+                document.write(findTip)
+
+                const withTip = customerMenuPrice + findTip;
+
+                document.write('<p>' + (withTip + withVAT) + '</p>');
+        
+            </script>
+        </section>
+    </body>
+</html>
